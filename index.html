@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href = "./css/style.css" rel="stylesheet"> 
+    <style>       
+        .fb1 {
+            display: flex;
+            flex-direction: row;
+            column-gap: .7rem;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 767px) {
+            /* Your phone-specific CSS styles go here */
+            .fb1 { 
+                flex-direction: column;
+                row-gap: .5rem;
+            }
+        }
+    </style>
+</head>
+<body class = "text-bg-dark" style="background-image: url(https://e0.pxfuel.com/wallpapers/326/283/desktop-wallpaper-zoom-background-nomad%C2%AE-dark-website-thumbnail.jpg) ;  ">
+    
+    <div class = "cover">
+        <p class = "text-center font-monospace" style="margin-bottom: 0;">
+            <span style="font-size: 1.5rem;"> Welcome! </span> <br> 
+            Easily create, edit and manage your notes all in one place. 
+        </p>
+        <div class = "fb1">
+			<a href = "./pages/newNote.html">
+	            <button class = "btn btn-primary cus_btn font-monospace" >
+	                New Note
+	            </button>
+            </a>
+            <a href="./pages/UpdateNote.html"> 
+	            <button class = "btn btn-primary cus_btn font-monospace">
+	                Update Note
+	            </button>
+            </a>
+            <a href="./pages/DeleteNote.html">
+	            <button class = "btn btn-primary cus_btn font-monospace"> 
+	                Delete Note
+	            </button>
+            </a>
+            <a href = "./pages/RetrieveNote.html">
+	            <button class = "btn btn-primary cus_btn font-monospace"> 
+	                Retrieve Note
+	            </button>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
